@@ -76,10 +76,10 @@ looks like:
 
     (x_i ^ 0xC7) + (0x01 << (total_i ^ 0x03)) + 0x01 == ciphertext_i
 
-*i* is the index of the current character
-*x_i* is the current input character to be ciphered
-*total_i* is the least significant byte of the sum total of each ciphered character, up to *i*
-*ciphertext_i* is the current byte of stored ciphertext that the input should match after the algorithm is finished
+* *i* is the index of the current character
+* *x_i* is the current input character to be ciphered
+* *total_i* is the least significant byte of the sum total of each ciphered character, up to *i*
+* *ciphertext_i* is the current byte of stored ciphertext that the input should match after the algorithm is finished
 
 Since our objective is to solve for *x_i* at every iteration, we'll re-arrange the function:
 
